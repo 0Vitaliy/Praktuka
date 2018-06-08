@@ -118,6 +118,8 @@ a.prev:hover,a.next:hover {
 	background: #000 url('https://lh4.googleusercontent.com/-JN1IZLtuToI/UUoZnMG3C_I/AAAAAAAAAE8/SEbJ9nqXGnY/s226/sprite.png') no-repeat -167px 25px;
 }
 .slider {
+	margin: 0 auto;
+	width: 90%;
 	height:100vh;
 	position: relative;
 }
@@ -437,4 +439,193 @@ input:focus, textarea:focus {
     -moz-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
     box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
     outline: none;
+}
+
+
+
+
+
+
+.contener{
+	height: 245px;
+	color:#ccc;
+	font-size:12px;
+    display: block;
+	padding-top: 30px;
+	z-index:-2;
+    font:12px/1.3 'PT Sans', sans-serif;
+	background-color:#31353a;
+
+	background-image:-webkit-linear-gradient(top, #31353a, #2f3337);
+	background-image:-moz-linear-gradient(top, #31353a, #2f3337);
+	background-image:linear-gradient(top, #31353a, #2f3337);
+}
+
+/* Set a width to the outermost UL and center it */
+.qwe{
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.contener > ul{
+	width:960px;
+	
+	left:50%;
+	bottom:0;
+	
+	padding-bottom: 60px;
+	z-index:-1;
+}
+
+/* The four columns of links */
+
+.contener > ul > li{
+	width:25%;
+	float:left;
+}
+
+.contener ul{
+	list-style: none;
+}
+
+/* The links */
+
+.contener > ul > li ul li{
+	margin-left:43px;
+	text-transform: uppercase;
+	font-weight:bold;
+	line-height:1.8;
+}
+
+.contener > ul > li ul li a{
+	text-decoration: none !important;
+	color:#7d8691 !important;
+}
+
+.contener > ul > li ul li a:hover{
+	color:#ddd !important;
+}
+
+/* The company logo */
+
+.contener a.logo{
+	color: #e4e4e4 !important;
+	text-decoration: none !important;
+	font-size: 14px;
+	font-weight: bold;
+	position: relative;
+	text-transform: uppercase;
+	margin-left: 16px;
+	display: inline-block;
+	margin-top: 7px;
+}
+
+.contener a.logo i{
+	font-style: normal;
+	position: absolute;
+	width: 60px;
+	display: block;
+	left: 48px;
+	top: 18px;
+	font-size: 12px;
+	color: #999;
+}
+
+.contener a.logo:before{
+	content: '';
+	display: inline-block;
+	background: url('../img/sprite.png') no-repeat -19px -70px;
+	width: 48px;
+	height: 37px;
+	vertical-align: text-top;
+}
+
+/* Common styles for the four color bars */
+
+.contener p{
+	width: 90%;
+	margin-right: 10%;
+	padding: 9px 0;
+	line-height: 18px;
+	background-color: #058cc7;
+	font-weight: bold;
+	font-size: 14px;
+	color:#fff;
+	text-transform: uppercase;
+	text-shadow: 0 1px rgba(0,0,0,0.1);
+	box-shadow: 0 0 3px rgba(0,0,0,0.3);
+	margin-bottom: 20px;
+	opacity:0.9;
+	cursor:default;
+
+	-webkit-transition: opacity 0.4s;
+	-moz-transition: opacity 0.4s;
+	transition: opacity 0.4s;
+}
+
+.contener > ul > li:hover p{
+	opacity:1;
+}
+
+.contener p:before{
+	content: '';
+	display: inline-block;
+	background: url('../img/sprite.png') no-repeat;
+	width: 16px;
+	height: 18px;
+	margin: 0 12px 0 15px;
+	vertical-align: text-bottom;
+}
+
+
+/*-------------------------
+	The different colors
+--------------------------*/
+
+
+.contener p.home{
+	background-color: #0096d6;
+
+	background-image:-webkit-linear-gradient(top, #0096d6, #008ac6);
+	background-image:-moz-linear-gradient(top, #0096d6, #008ac6);
+	background-image:linear-gradient(top, #0096d6, #008ac6);
+}
+
+.contener p.home:before{
+	background-position: 0 -110px;
+}
+
+.contener p.services{
+	background-color: #00b274;
+
+	background-image:-webkit-linear-gradient(top, #00b274, #00a46b);
+	background-image:-moz-linear-gradient(top, #00b274, #00a46b);
+	background-image:linear-gradient(top, #00b274, #00a46b);
+}
+
+.contener p.services:before{
+	background-position: 0 -129px;
+}
+
+.contener p.reachus{
+	background-color: #d75ba2;
+
+	background-image:-webkit-linear-gradient(top, #d75ba2, #c75496);
+	background-image:-moz-linear-gradient(top, #d75ba2, #c75496);
+	background-image:linear-gradient(top, #d75ba2, #c75496);
+}
+
+.contener p.reachus:before{
+	background-position: 0 -89px;
+}
+
+.contener p.clients{
+	background-color: #e9ac40;
+
+	background-image:-webkit-linear-gradient(top, #e9ac40, #d89f3b);
+	background-image:-moz-linear-gradient(top, #e9ac40, #d89f3b);
+	background-image:linear-gradient(top, #e9ac40, #d89f3b);
+}
+
+.contener p.clients:before{
+	background-position: 0 -69px;
 }
